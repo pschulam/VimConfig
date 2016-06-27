@@ -8,7 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'vim-latex/vim-latex'
+Plugin 'reedes/vim-pencil'
 
 call vundle#end()
 
@@ -27,3 +27,10 @@ set backspace=2
 au FileType py autoindent
 au FileType py smartindent
 
+let g:pencil#wrapModeDefault = 'soft'
+
+augroup pencil
+    autocmd!
+    autocmd FileType markdown,md call pencil#init()
+    autocmd FileType tex         call pencil#init()
+augroup END
