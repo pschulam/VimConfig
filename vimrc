@@ -6,9 +6,9 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-fugitive'
-
 Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'vim-latex/vim-latex'
 
 call vundle#end()
 
