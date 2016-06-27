@@ -23,6 +23,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set backspace=2
+set ruler
 
 au FileType py autoindent
 au FileType py smartindent
